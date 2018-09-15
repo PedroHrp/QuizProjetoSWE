@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<title>QuiZ </title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto:400,700i,900,900i" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="scripts/estilo.css">
+		<script src="scripts/app.js"></script>	
+	</head>
+	<body>
+
+		<header>
+			<h1 id="tPagina"> Quiz de Desenvolvimento WEB</h1>
+		</header>
+
+		<article>
+				
+			<form id="quiz" class="quiz" name="quiz">
+
+				<p> 1 - O que significa HTML?</p>
+					<input id="textbox" type="text" name="questao1">
+
+				<p> 2 - Qual o elemento raiz do documento html?</p>
+					<input type="radio" id="q2" name="questao2" value="!doctype html">!doctype html</br>
+					<input type="radio" id="q2" name="questao2" value="<html>"> html </br>
+					<input type="radio" id="q2" name="questao2" value="body"> body </br>
+					<input type="radio" id="q2" name="questao2" value="head"> head </br>
+
+				<p> 3 - O que o elemento aside faz?</p>
+					<input type="radio" id="q3" name="questao3" value="Painel Lateral">Painel Lateral</br>
+					<input type="radio" id="q3" name="questao3" value="Painel Superior">Painel Superior</br>
+					<input type="radio" id="q3" name="questao3" value="Painel Inferior">Painel Inferior</br>
+					<input type="radio" id="q3" name="questao3" value="Painel de Navegação">Painel de Navegação</br>
+
+				<p> 4 - Qual elemento é responsavel pelo relacionamento do arquivo com extensão css?</p>
+					<select name="questao4" required>
+						<option value="scritp">scritp</option>
+						<option value="script">script</option>
+						<option value="src">src</option>
+						<option value="link">link</option>
+						<option value="rel">rel</option>
+					</select>
+
+				<p> 5- Quantas operações de Comparação existe?</p>
+					<input type="number" name="questao5" required /> </br>
+
+				<p> 6 - Qual sintaxe para modificar um elemento HTML com id=meuID no CSS</p>
+					<input id="textbox" type="text" name="questao6"></br>
+
+				<p> 7 -Qual é a sintaxe JavaScript correta para abrir uma nova janela chamada "google"?</p>
+					<input type="radio" id="q7" name="questao7" value="certa">google = window.open("http://www.google.com"); </br>
+					<input type="radio" id="q7" name="questao7" value="errada">google = window.new("http://www.google.com"); </br>
+					<input type="radio" id="q7" name="questao7" value="errada">google = window.go("http://www.google.com"); </br>
+					<input type="radio" id="q7" name="questao7" value="errada">google = window.newWindow("http://www.google.com");
+
+				<p> 8 - Marque a forma elementar do CSS correta:</p>
+					<input type="radio" id="q8" name="questao8" value="errada">Propriedade, seletor, caracteristica</br>
+					<input type="radio" id="q8" name="questao8" value="errada">Element, name, propriedade</br>
+					<input type="radio" id="q8" name="questao8" value="errada">Name, element, valor Inferior </br>
+					<input type="radio" id="q8" name="questao8" value="certa">Seletor, propriedade, valor </br>
+
+				<p> 9 - Selecione o elemento que NÂO é um elementento semantico. </p>
+					<select name="questao9" required>
+						<option value="figure">figure</option>
+						<option value="foter">foter</option>
+						<option value="nav">nav</option>
+						<option value="aside">aside</option>
+						<option value="header">header</option>
+					</select>
+
+				<p> 10 - Qual é a sintaxe correta do JavaScript para alterar o conteúdo do elemento HTML abaixo?</p>
+				  <p>"< p  id = "demo"> Esta é uma demonstração. p >"</p>
+					<input type="radio" id="q10" name="questao10" value="errada"># demo.innerHTML = "Hello World!";</br>
+					<input type="radio" id="q10" name="questao10" value="errada">document.getElement ("p"). innerHTML = "Olá, mundo!";</br>
+					<input type="radio" id="q10" name="questao10" value="certa">document.getElementById ("demo"). innerHTML = "Olá, mundo!"; </br>
+					<input type="radio" id="q10" name="questao10" value="errada">document.getElementByName ("p"). innerHTML = "Olá, mundo!";</br>
+
+				</br></br>
+				<div id="botoes">
+					<input type="button" class="button" id="enviar" value="Enviar" onclick="check();">
+					<button type="reset" class="button" value="Reset">Reiniciar</button>
+				</div>
+				
+			</form>
+
+		</article>
+
+		<footer>
+			<div id="depois_submit">
+				<p id="resultado_final"></p>
+				<p id="mensagem_final"></p>
+
+			</div>
+			<p id="meuNome">Pedro Henrique Rodrigues 1650475</p>
+		</footer>
+		
+	</body>
+</html>

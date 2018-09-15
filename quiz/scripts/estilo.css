@@ -1,0 +1,145 @@
+
+/*---------------------TELA QUIZ-----------------------------*/
+
+
+/* Todos dispositivos */
+header{
+	font-size: 150%;
+}
+
+#tPagina{
+	text-align: center;
+}
+
+p{
+	font-weight:900;
+}
+
+body{
+	background-color: lightblue;
+	background-image: linear-gradient(lightblue, darkblue);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;	
+}
+/*
+	#quiz{
+	margin-top: 10px;
+	margin-left: 10%; 
+  	background: white ;
+ 	padding: 10px 20px 10px 20px;
+  	width: 60%;
+	  	 
+}*/
+.quiz{
+	margin: 0 20% 5% 20%;
+	border-radius: 2em; /*Raio da borda*/
+	padding: 3%; /*Distancia entre conteudo*/
+	border: 1px  solid darkblue; 
+	box-shadow: 0 0 8px 3px black; /*sombra nice*/
+	background-color: white;
+	background-image: linear-grad ent(#D6D6DF,white); /*DEGRADE*/
+	background-repeat: no-repeat;
+}
+
+input[type=text], [type=number], select {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ 
+}
+
+
+
+#depois_submit{
+	visibility: hidden;
+}
+
+.button{
+	height: 55px; /*ALTURA*/
+    width: 150px; /*LARGURA*/
+	border-radius: 2em; /* aparar as arestas*/
+ 	display:inline-block; /*Quadrado grande para afastar*/
+ 	padding:0.3em 1.2em; /*Distancia entre conteudo*/
+ 	margin:0 0.3em 0 0;
+ 	font-weight:300;
+ 	color:#FFFFFF;
+ 	background-color:#4eb5f1;
+ 	text-align:center;
+ 	transition: all 0.2s;
+}
+.button:hover{
+	background-color:#4095c6;
+}
+
+@media all and (max-width:30em){
+	.button{
+	  display:block;
+  		margin:0.2em auto;
+ 	}
+}
+
+footer{
+	margin: 0.5% 0 5% 0;
+	position: absolute;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+	font-family: 'Oswald', sans-serif;
+	font-weight:400;
+
+
+}
+
+#resultado_final{
+	font-size: 155%;
+
+}
+
+#meuNome{
+
+	margin: 0 5% 0 0;
+	text-align: right;
+}
+/*Para dispovitivos moveis*/
+@media only screen and (max-width: 800px ){
+
+	#quiz{
+		margin: 0 5% 5% 5%;
+		border-radius: 2em;
+		padding: 3%;
+		border: 1px  solid darkblue;
+		box-shadow: 0 0 8px 3px black;
+		background-color: white;
+		background-image: linear-gradient(#D6D6DF,white);
+		background-repeat: no-repeat;
+	}
+
+}
+
+/*---------------------TELA INICIAL-----------------------------*/
+
+#quadroIniciar{
+	text-align: center }
+.btIniciarQuiz{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/**/
+
+
+
+
